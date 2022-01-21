@@ -1,4 +1,6 @@
-Built the back end for an e-commerce site. Used a working Express.js API and configured it to use Sequelize to interact with a MySQL database.
+Built the back end for an e-commerce site. Used a working Express.js API and configured it to use Sequelize to interact with a MySQL database
+
+
 
 GIVEN a functional Express.js API
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
