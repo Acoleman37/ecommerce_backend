@@ -25,8 +25,8 @@ Product.init(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {
-        isDecimal: true
-      }
+        isDecimal: true,
+      },
     },
     // define stock column
     stock: {
@@ -34,19 +34,16 @@ Product.init(
       allowNull: false,
       defaultValue: 10,
       validate: {
-        isNumeric: true
-      }
+        isNumeric: true,
+      },
     },
     // define category_id column
     category_id: {
-      // use the special Sequelize DataTypes object provide what type of data it is
       type: DataTypes.INTEGER,
-      // this is the equivalent of SQL's `NOT NULL` option
-      allowNull: false,
-      // instruct that this is the Primary Key
-      primaryKey: true,
-      // turn on auto increment
-      autoIncrement: true,
+      references: {
+        model: "category",
+        key: "id",
+      },
     },
   },
   {
@@ -54,7 +51,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "product",
+    modelName: 'product',
   }
 );
 
