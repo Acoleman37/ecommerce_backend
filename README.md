@@ -1,15 +1,17 @@
-Built the back end for an e-commerce site. Used a working Express.js API and configured it to use Sequelize to interact with a MySQL database:
+# E-Commerce-BackEnd
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/Acoleman37/ecommerce_backend?style=flat&logo=appveyor)
+## Description
+  
+This app uses mySQL and sequelize to run the backend for any E commerce site. The database can accept products, tags, categories, and product tags. This app also utilizes the CRUD system allowing the user to modify their data in any way that they see fit.
 
-https://watch.screencastify.com/v/9YCK1zG65IXoClO98zOt
+## Installation
 
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
+Once you have MySQL and Node.js installed clone the GitHub repository. Once you have the repo installed, navigate to the root directory and enter `npm istall` to install dependicies. Finally to run the app simply enter `npm start` into the command line.
+
+## Questions
+
+ </br>
+  
+* GitHub: https://github.com/Acoleman37 </br>
+* Email: Aleccoleman37@gmail.com
+* Tutorial: https://watch.screencastify.com/v/9YCK1zG65IXoClO98zOt
